@@ -1,0 +1,2 @@
+log file, ex:
+2026-09-16 18:08:37: Key.ctrl_r
